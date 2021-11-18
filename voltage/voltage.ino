@@ -9,7 +9,7 @@ void setup() {
 
 void loop() {
   value = analogRead(A0);
-  vOut = (value * 5.0) / 1024.0;
+  vOut = (value * 5.0) / 1023.0; 
   vIn = vOut / (R2/(R1=R2));
   Serial.println(vIn);
   delay(100);
